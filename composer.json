@@ -1,0 +1,7 @@
+{
+	"name": "humanmade/custom-meta-boxes",
+	"type": "wordpress-plugin",
+	"autoload": {
+		"files": ["custom-meta-boxes.php"]
+	}
+}

@@ -1,6 +1,9 @@
 {
 	"name": "humanmade/custom-meta-boxes",
 	"type": "wordpress-plugin",
+	"require" : {
+		"icanboogie/inflector": "dev-master"
+	},
 	"autoload": {
 		"files": ["custom-meta-boxes.php"]
 	}

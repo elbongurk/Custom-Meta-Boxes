@@ -1367,7 +1367,7 @@ class CMB_Group_Field extends CMB_Field {
 
 				</div>
 
-				<button class="button repeat-field"><?php esc_html_e( 'Add New Group', 'cmb' ); ?></button>
+				<button class="button repeat-field">Add New <?php echo \ICanBoogie\Inflector::get()->singularize($this->title); ?></button>
 
 		<?php }
 
@@ -1394,7 +1394,7 @@ class CMB_Group_Field extends CMB_Field {
 		?>
 
 		<?php if ( $this->args['repeatable'] ) : ?>
-			<button class="cmb-delete-field" title="Remove field"><span class="cmb-delete-field-icon">&times;</span> Remove Group</button>
+			<button class="cmb-delete-field" title="Remove field"><span class="cmb-delete-field-icon">&times;</span> Remove <?php echo \ICanBoogie\Inflector::get()->singularize($this->title); ?></button>
 		<?php endif; ?>
 
 		<?php CMB_Meta_Box::layout_fields( $fields ); ?>
